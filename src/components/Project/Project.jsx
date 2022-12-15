@@ -1,18 +1,24 @@
 import React from 'react'
-import cl from './Project.module.css'
 
-const Project = ({title, img}) => {
+// dependencies
+import { NavLink} from 'react-router-dom'
+
+// styles
+import './Project.css'
+
+const Project = ({title, img, id}) => {
   return (
-   <li className={cl.project}>
-      <a href="./project-page.html">
+   <NavLink to={`/project/${id}`}>
+      <li className="project">
          <img 
             src={img}
             alt={title}
-            className={cl.project__img}
+            className="project__img"
          />
-         <h3 className={cl.project__title}>{title}</h3>
-      </a>
-   </li>
+         {id}
+         <h3 className="project__title">{title}</h3>
+      </li>
+   </NavLink>
   )
 }
 
