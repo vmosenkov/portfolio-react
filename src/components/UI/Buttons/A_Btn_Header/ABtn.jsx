@@ -1,10 +1,11 @@
 import React from 'react';
 
-import cl from './ABtn.module.css'
+// styles
+import './ABtn.css'
 
 const ABtn = ({children, ...props}) => {
   return (
-    <a {...props} className={cl.btn}>{children}</a>
+    <a {...props} className="btn">{children}</a>
   )
 }
 
