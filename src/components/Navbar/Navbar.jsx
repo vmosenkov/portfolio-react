@@ -1,35 +1,42 @@
-import React from 'react'
+import React from 'react';
 
-import cl from "./Navbar.module.css"
+// dependencies
+import { NavLink } from 'react-router-dom';
 
-// icons - themes
-import sun from "./img/icons/sun.svg";
-import moon from "./img/icons/moon.svg";
+// styles
+import "./Navbar.css";
 
-// labels
-import vmosenkovLabel_white from "./img/label/vmosenkovLabel_white.png";
-import vmosenkovLabel_black from "./img/label/vmosenkovLabel_black.png";
+// components
+import SwitchTheme from '../UI/SwitchTheme/SwitchTheme';
+import LabelLogo from '../UI/LabelLogo/LabelLogo';
 
 const Navbar = () => {
+
+const activeLink = 'nav-list__link nav-list__link--active';
+const notActiveLink = 'nav-list__link';
+
   return (
-    <nav className={cl.nav}>
+    <nav className="nav">
         <div className="container">
-            <div className={cl.nav_row}>
-                <a href="./index.html" className={cl.logo}>
-                    <img src={vmosenkovLabel_white} alt="Light mode" className="dark-mode-btn__icon" />
+            <div className="nav_row">
+                <NavLink className="logo" to="/" >
+                    <LabelLogo />
                     <strong></strong>
                     portfolio
-                </a>
+                </NavLink>
+                
+                <SwitchTheme/>
 
-                <button className="dark-mode-btn">
-                    <img src={sun} alt="Light mode" className="dark-mode-btn__icon"/>
-                    <img src={moon} alt="Dark mode" className="dark-mode-btn__icon"/>
-                </button>
-
-                <ul className={cl.nav_list}>
-                    <li className={cl.nav_list__item}><a href="./index.html" className={cl.nav_list__link}>Home</a></li>
-                    <li className={cl.nav_list__item}><a href="./projects.html" className={cl.nav_list__link}>Projects</a></li>
-                    <li className={cl.nav_list__item}><a href="./contacts.html" className={cl.nav_list__link}>Contacts</a></li>
+                <ul className='nav-list'>
+                    <li className='nav-list__item'>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/" >Home</NavLink>
+                    </li>
+                    <li className='nav-list__item'>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/projects" >Projects</NavLink>
+                    </li>
+                    <li className='nav-list__item'>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/contacts" >Contacts</NavLink>
+                    </li>
                 </ul>
             </div>
         </div>
