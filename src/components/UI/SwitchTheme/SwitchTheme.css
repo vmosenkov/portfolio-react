@@ -38,5 +38,6 @@
 
 .dark-mode-btn__icon {
 	position: relative;
+	color: black;
 	z-index: 9;
 }
