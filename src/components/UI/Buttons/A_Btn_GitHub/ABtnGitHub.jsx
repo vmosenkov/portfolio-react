@@ -1,8 +1,10 @@
 import React from 'react';
 
-import cl from './ABtnGitHub.module.css';
+// styles
+import './ABtnGitHub.css';
 
-import imgGitHub from './icons/gitHub-black.svg'
+// icons
+import imgGitHubBlack from './icons/gitHub-black.svg'
 
 const ABtnGitHub = ( { link } ) => {
    return (
@@ -10,9 +12,9 @@ const ABtnGitHub = ( { link } ) => {
          href={ link }
          rel="noreferrer"
          target="_blank"
-         className={cl.btn_outline}
+         className="btn-outline"
       >
-         <img src={ imgGitHub } alt="" />
+         <img src={ imgGitHubBlack } alt="" />
          GitHub repo
       </a>
    )
