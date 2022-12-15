@@ -1,12 +1,17 @@
 import React from 'react';
 import { useEffect } from "react";
+
+// dependencies - icon
+import { BsSun } from 'react-icons/bs';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+
+// hooks
 import { useLocalStorage } from '../../../hooks/useLocalStorage';
+
+// utils
 import detectSystemTheme from './../../../utils/detectSystemTheme';
 
-// icons - themes
-import sun from "./icons/sun.svg";
-import moon from "./icons/moon.svg";
-
+// styles
 import './SwitchTheme.css'
 
 
@@ -37,9 +42,10 @@ const Theme = () => {
    return (
       <>
          <button className={theme === 'dark' ? btnActive : btnNotActive} onClick={toggleTheme}>
-            {/* {theme === 'light' ? (<img src={sun} alt="Light mode" className="dark-mode-btn__icon"/>) : (<img src={moon} alt="Dark mode" className="dark-mode-btn__icon"/>)}{' '} */}
-            <img src={sun} alt="Light mode" className="dark-mode-btn__icon"/>
-            <img src={moon} alt="Dark mode" className="dark-mode-btn__icon"/>
+            {/* <img src={sun} alt="Light mode" className="dark-mode-btn__icon"/> */}
+            {/* <img src={moon} alt="Dark mode" className="dark-mode-btn__icon"/> */}
+            <BsSun className="dark-mode-btn__icon"/>
+            <BsFillMoonStarsFill className="dark-mode-btn__icon"/>
          </button>
       </>
   )
