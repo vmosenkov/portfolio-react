@@ -3,17 +3,14 @@
 .header {
 	padding: 40px 0;
 	min-height: 695px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	background-color: var(--header-bg);
-	background-image: url('./img/header-bg.png');
+	background-image: var(--header-background-image);
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: center center;
-
 	color: var(--header-text);
 	text-align: center;
 }
@@ -21,6 +18,12 @@
 .header__wrapper {
 	padding: 0 15px;
 	max-width: 660px;
+	height: 90vh;
+	display: flex;
+   flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .header__title {
@@ -28,22 +31,36 @@
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.4;
+	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	text-shadow: -5px -2px rgb(0, 0, 0) , -3px 0px rgb(255, 7, 7), -2px 1px rgb(7, 238, 255);
 }
 
 .header__title strong {
 	font-size: 60px;
 	font-weight: 700;
+	/* color: var(--text-color); */
 }
 
 .header__title em {
 	font-style: normal;
-	color: var(--accent);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	text-shadow: -5px -2px rgb(255, 196, 0) , -3px 0px rgb(255, 7, 7), -2px 1px rgb(7, 238, 255);
 }
 
 .header__text {
-	margin-bottom: 40px;
-	font-size: 18px;
+	margin-top: 10vh;
+	font-size: 24px;
+	font-weight: 500;
 	line-height: 1.333;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	text-shadow: -5px -2px rgb(255, 196, 0) , -3px 0px rgb(255, 7, 7), -2px 1px rgb(7, 238, 255);
 }
 
 .header__text p + p {
