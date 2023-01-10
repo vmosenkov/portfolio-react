@@ -12,12 +12,12 @@ const ContactsPage = () => {
                      <p>Saint-Petersburg, Russia</p>
                   </li>
                   <li className="content-list__item">
-                     <h2 className="title-2">Telegram / WhatsApp</h2>
-                     <p><a href="tel:+79051234567">+7 (905) 123-45-67</a></p>
+                     <h2 className="title-2">Telegram</h2>
+                     <p><a href="https://t.me/vmosenkov" rel="noreferrer" target="_blank">@vmosenkov</a></p>
                   </li>
                   <li className="content-list__item">
                      <h2 className="title-2">Email</h2>
-                     <p><a href="mailto:webdev@protonmail.com">123@gmail.com</a></p>
+                     <p><a href="mailto:vladmos1995@gmail.com" rel="noreferrer" target="_blank">vladmos1995@gmail.com</a></p>
                   </li>
             </ul>
          </div>
