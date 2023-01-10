@@ -11,6 +11,7 @@ import "./ProjectPage.css"
 
 // components
 import ABtnGitHub from '../../../components/UI/Buttons/A_Btn_GitHub/ABtnGitHub';
+import ABtnLiveSite from '../../../components/UI/Buttons/A_Btn_LiveSite/ABtnLiveSite.jsx';
 
 
 const ProjectPage = () => {
@@ -20,18 +21,55 @@ const ProjectPage = () => {
       <main className="section">
          <div className="container">
             <div className="project-details">
-               <h1 className="title-1">{project.title}</h1>
+               <h1 className="title-1">{project.project[0].title}</h1>
 
-               <img src={project.imgBig} alt={project.title} className="project-details__cover" />
+               <img src={project.project[0].imgBig} alt={project.project[0].title}className="project-details__cover" />
 
-               <div className="project-details__desc">
-                  <p>{project.skills}</p>
+            </div>
+            <div className="project-box">
+               <div className="project-box__row">
+                  <div className="project-box__title">Project:</div>
+                  <div className="project-box__title-2">{project.project[0].category}</div>
                </div>
+
+               <div className="project-box__title">Site description:</div>
+               <div className="project-box__desc">{project.project[0].description}</div>
                
-               {project.gitHubLink && (
-                  <ABtnGitHub link="http://github.com/"/>
+               <div className="project-box__title">
+                  <p>Built with:</p>
+               </div>
+                  
+               <div className="skills-box">
+                  <div className="skills-title">Frontend skills:</div>
+                  <ul className="skills-row">
+                     {project.project[0].skills.skillsFrontend}
+                  </ul>
+               </div>
+
+               {project.project[0].skills.skillsBackend && (
+               <div className="skills-box">
+                  <div className="skills-title">Backend skills:</div>
+                  <ul className="skills-row">
+                  {project.project[0].skills.skillsBackend}
+                  </ul>
+               </div>
                )}
-               
+               {project.project[0].skills.skillsDependencies && (
+               <div className="skills-box">
+                  <div className="skills-title">Dependencies:</div>
+                  <ul className="skills-row">
+                     {project.project[0].skills.skillsDependencies}
+                  </ul>
+               </div>
+               )}
+            </div>
+            <div className="project-works_links">
+               {project.project[0].gitHubLink && (
+                  <ABtnGitHub link={project.project[0].gitHubLink}/>
+               )}
+               {project.project[0].liveSiteLink && (
+                  <ABtnLiveSite link={project.project[0].liveSiteLink}/>
+               )}
             </div>
          </div>
       </main>
