@@ -9,7 +9,7 @@ import './Project.css'
 
 const Project = ({title, img, id, category}) => {
   return (
-   <NavLink to={`/project/${id}`}>
+   <NavLink to={`/portfolio-react/project/${id}`}>
       <Tilt className="Tilt" options={{ max : 25, scale: 1.1, perspective: 1000, speed: 1000, transition: true,}}>
          <li className="project">
          <div className="Tilt-inner">
