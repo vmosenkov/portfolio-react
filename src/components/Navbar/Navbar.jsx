@@ -19,7 +19,7 @@ const notActiveLink = 'nav-list__link';
     <nav className="nav">
         <div className="container">
             <div className="nav_row">
-                <NavLink className="logo" to="/" >
+                <NavLink className="logo" to="/portfolio-react" >
                     <LabelLogo />
                     <strong></strong>
                     portfolio
@@ -29,17 +29,17 @@ const notActiveLink = 'nav-list__link';
 
                 <ul className='nav-list'>
                     <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/" >Home</NavLink>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react" >Home</NavLink>
                     </li>
                     <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/projects" >Projects</NavLink>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/projects" >Projects</NavLink>
                     </li>
                     <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/contacts" >Contacts</NavLink>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/contacts" >Contacts</NavLink>
                     </li>
-                    <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/myskills" >My Skills</NavLink>
-                    </li>
+                    {/* <li className='nav-list__item'>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/myskills" >My Skills</NavLink>
+                    </li> */}
                 </ul>
             </div>
         </div>
