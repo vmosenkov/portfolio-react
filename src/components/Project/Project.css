@@ -1,6 +1,6 @@
 .project {
 	max-width: 370px;
-	background-color: var(--project-card-bg);
+	background-color: var(--SkillCard-bg);
 	box-shadow: var(--box-shadow);
 	border-radius: 10px;
 }
@@ -14,5 +14,13 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 1.3;
-	color: var(--project-card-text);
+	color: var(--SkillCard-text);
+}
+
+.project__desc {
+	padding: 0px 20px 25px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.3;
+	color: var(--SkillCard-text);
 }
