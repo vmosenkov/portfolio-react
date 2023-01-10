@@ -22,20 +22,14 @@ import NotFoundPage from './pages/NotFoundPage';
 // utils
 import ScrollToTop from './utils/scrollToTop.js'
 
-   
-function Loading() {
-   return <h2>🌀 Loading...</h2>;
-}
-
 function App() {
    return (
       <div className="App">
-         <Suspense fallback={<Loading />}>
          <Router>
             <ScrollToTop />
             <Navbar />
             <Routes>
-               <Route path="/portfolio-react/home" element={<HomePage />} />
+               <Route path="/portfolio-react/" element={<HomePage />} />
                <Route path="/portfolio-react/projects" element={<ProjectsPage />} />
                <Route path="/portfolio-react/project/:id" element={<ProjectPage />} />
                <Route path="/portfolio-react/contacts" element={<ContactsPage />} />
@@ -43,7 +37,6 @@ function App() {
                <Route path="*" element={<NotFoundPage />} />
             </Routes>
          </Router>
-         </Suspense>
          <Footer />
       </div>
    );
