@@ -37,6 +37,9 @@ const notActiveLink = 'nav-list__link';
                     <li className='nav-list__item'>
                         <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/contacts" >Contacts</NavLink>
                     </li>
+                    <li className='nav-list__item'>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/myskills" >My Skills</NavLink>
+                    </li>
                 </ul>
             </div>
         </div>
