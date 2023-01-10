@@ -14,14 +14,15 @@ const ProjectsPage = () => {
     <div>
        <main className="section">
         <div className="container">
-            <h2 className="title-1">Projects</h2>
+            <h2 className="title-1">Web Development Projects</h2>
             <ul className="projects">
                 {projects.map((project, id) => {
                     return <Project 
                         key={project.id}
-                        title={project.title}
-                        img={project.img}
+                        title={project.project[0].title}
+                        img={project.project[0].img}
                         id={id}
+                        category={project.project[0].category}
                     />;
                 })}
             </ul>
