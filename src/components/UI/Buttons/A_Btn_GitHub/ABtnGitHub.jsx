@@ -4,7 +4,7 @@ import React from 'react';
 import './ABtnGitHub.css';
 
 // icons
-import imgGitHubBlack from './icons/gitHub-black.svg'
+import { BsGithub } from 'react-icons/bs';
 
 const ABtnGitHub = ( { link } ) => {
    return (
@@ -14,7 +14,7 @@ const ABtnGitHub = ( { link } ) => {
          target="_blank"
          className="btn-outline"
       >
-         <img src={ imgGitHubBlack } alt="" />
+         <BsGithub className="btn-outline_icon" />
          GitHub repo
       </a>
    )
