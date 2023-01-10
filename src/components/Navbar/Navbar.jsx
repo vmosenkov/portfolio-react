@@ -29,7 +29,7 @@ const notActiveLink = 'nav-list__link';
 
                 <ul className='nav-list'>
                     <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/home" >Home</NavLink>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/" >Home</NavLink>
                     </li>
                     <li className='nav-list__item'>
                         <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/projects" >Projects</NavLink>
