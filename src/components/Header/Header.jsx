@@ -29,7 +29,7 @@ const Header = () => {
             <span>I'm a</span><br/>
             <span>front-end developer</span><br/>
             <span>&</span><br/>
-            <span>3D artist</span><br/>
+            <span>Beginner 3d artist</span><br/>
          </h1>
          <div className="header__text">
             <p>with passion for learning and creating.</p>
