@@ -16,7 +16,7 @@ import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/Project/ProjectsPage/ProjectsPage';
 import ProjectPage from './pages/Project/ProjectPage/ProjectPage';
 import ContactsPage from './pages/ContactsPage';
-import MySkillsPage from './pages/MySkillsPage';
+/* import MySkillsPage from './pages/MySkillsPage'; */
 import NotFoundPage from './pages/NotFoundPage';
 
 // utils
