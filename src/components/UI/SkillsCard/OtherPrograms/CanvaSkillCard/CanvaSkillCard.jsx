@@ -12,7 +12,7 @@ const CanvaSkillCard = () => {
    <li>
       <Tilt className="Tilt" options={{ max : 45, scale: 1.2, perspective: 1000, speed: 1000, transition: true,}}>
          <div className="skillCard">
-            <img className="skillCard-icon" src={logoCanva} alt="logo react" />
+            <img className="skillCard-icon" src={logoCanva} alt="logo react" type="image/svg+xml"/>
             <div className="skillCard-name">Canva</div>
          </div>
       </Tilt>
