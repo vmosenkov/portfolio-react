@@ -17,7 +17,7 @@ const ContactsPage = () => {
                   </li>
                   <li className="content-list__item">
                      <h2 className="title-2">Linkedin</h2>
-                     <p><a href="https://www.linkedin.com/in/vmosenkov/" rel="noreferrer" target="_blank">/vmosenkov</a></p>
+                     <p><a href="https://www.linkedin.com/in/vmosenkov/" rel="noreferrer" target="_blank">vmosenkov</a></p>
                   </li>
                   <li className="content-list__item">
                      <h2 className="title-2">Email</h2>
