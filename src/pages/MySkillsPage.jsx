@@ -64,6 +64,7 @@ const MySkillsPage = () => {
                   <h2 className="skills-subtitle">Libraries</h2>
                   <ul className="skills-row">
                      <ReactSkillCard />
+                     <div>Redux</div>
                   </ul>
                   <h2 className="skills-subtitle">Other</h2>
                   <ul className="skills-row">
