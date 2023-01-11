@@ -32,14 +32,17 @@ const notActiveLink = 'nav-list__link';
                         <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/" >Home</NavLink>
                     </li>
                     <li className='nav-list__item'>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/about-me" >About Me</NavLink>
+                    </li>
+                    <li className='nav-list__item'>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/skills" >My Skills</NavLink>
+                    </li>
+                    <li className='nav-list__item'>
                         <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/projects" >Projects</NavLink>
                     </li>
                     <li className='nav-list__item'>
                         <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/contacts" >Contacts</NavLink>
                     </li>
-                    {/* <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/myskills" >My Skills</NavLink>
-                    </li> */}
                 </ul>
             </div>
         </div>
