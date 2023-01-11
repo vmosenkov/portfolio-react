@@ -41,7 +41,7 @@ const Theme = () => {
    
    return (
       <>
-         <button  title="theme-mode-btn" className={theme === 'dark' ? btnActive : btnNotActive} onClick={toggleTheme}>
+         <button title="theme-mode-btn" className={theme === 'dark' ? btnActive : btnNotActive} onClick={toggleTheme}>
             <BsSun className="dark-mode-btn__icon"/>
             <BsFillMoonStarsFill className="dark-mode-btn__icon"/>
          </button>
