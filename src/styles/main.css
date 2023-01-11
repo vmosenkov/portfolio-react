@@ -167,9 +167,9 @@ body {
 @media (max-width: 620px) {
 	/* Header  */
 
-	.header {
+	/* .header {
 		min-height: auto;
-	}
+	} */
 
 	.header__title {
 		font-size: 30px;
