@@ -1,7 +1,5 @@
 import React from 'react'
 
-/* import { Suspense } from 'react'; */
-
 // styles
 import './styles/main.css';
 
