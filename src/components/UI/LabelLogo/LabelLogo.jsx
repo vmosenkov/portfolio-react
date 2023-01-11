@@ -6,7 +6,7 @@ import vmosenkovLabel_white from "./img/vmosenkovLabel_white.png";
 const LabelLogo = () => {
    return (
       <div>
-         <img src={vmosenkovLabel_white} alt="vmosenkov logo" type="image/svg+xml"/>
+         <img src={vmosenkovLabel_white} alt="vmosenkov logo"/>
       </div>
    )
 }
