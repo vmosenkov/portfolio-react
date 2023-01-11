@@ -21,6 +21,7 @@ const Header = () => {
                   src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png"
                   srcset="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png 2x"
                   alt="Waving Hand on Microsoft Teams 1.0"
+                  type="image/svg+xml"
                   width="64"
                   height="64"
                />
