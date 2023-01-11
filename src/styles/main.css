@@ -168,7 +168,7 @@ body {
 	/* Header  */
 
 	.header {
-		min-height: unset;
+		min-height: auto;
 	}
 
 	.header__title {
