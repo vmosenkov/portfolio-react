@@ -27,8 +27,7 @@ const Footer = () => {
                      rel="noreferrer"
                      target="_blank"
                      aria-label="Link to vk">
-                        
-                     <img src={vk} alt="Link" type="image/svg+xml"/>
+                     <img src={vk} alt="Link to vk" type="image/svg+xml"/>
                   </a>
                </li>
 
