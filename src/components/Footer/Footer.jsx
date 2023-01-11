@@ -20,20 +20,79 @@ const Footer = () => {
       <div className="container">
          <div className="footer__wrapper">
             <ul className="social">
-               <li aria-label="Link to vk" className="social__item"><a href="https://vk.com/vmosenkov" rel="noreferrer" target="_blank"><img src={vk} alt="Link"/></a></li>
-               <li aria-label="Link to " className="social__item"><a href="https://www.instagram.com/v.mosenkov/" rel="noreferrer" target="_blank"><BsInstagram className="social__icons" /></a></li>
-               <li aria-label="Link to " className="social__item"><a href="https://t.me/vmosenkov" rel="noreferrer" target="_blank"><BsTelegram className="social__icons" /></a></li>
-               {/* <li className="social__item"><a href="#!" rel="noreferrer" target="_blank"><BsTwitter className="social__icons" /></a></li> */}
-               <li aria-label="Link to " className="social__item"><a href="https://github.com/vmosenkov" rel="noreferrer" target="_blank"><BsGithub className="social__icons" /></a></li>
-               <li aria-label="Link to " className="social__item"><a href="https://www.linkedin.com/in/vmosenkov/" rel="noreferrer" target="_blank"><BsLinkedin className="social__icons" /></a></li>
-               <li aria-label="Link to " className="social__item"><a href="https://www.artstation.com/vmosenkov" rel="noreferrer" target="_blank"><FaArtstation className="social__icons" /></a></li>
+               {/* vk */}
+
+               <li className="social__item">
+                  <a href="https://vk.com/vmosenkov"
+                     rel="noreferrer"
+                     target="_blank"
+                     aria-label="Link to vk">
+                     <img src={vk} alt="Link"/>
+                  </a>
+               </li>
+
+               {/* instagram */}
+
+               <li className="social__item">
+                  <a href="https://www.instagram.com/v.mosenkov/"
+                     rel="noreferrer"
+                     target="_blank"
+                     aria-label="Link to instagram">
+                     <BsInstagram className="social__icons" />
+                  </a>
+               </li>
+
+               {/* tg */}
+
+               <li className="social__item">
+                  <a href="https://t.me/vmosenkov"
+                     rel="noreferrer"
+                     target="_blank"
+                     aria-label="Link to tg">
+                     <BsTelegram className="social__icons" />
+                  </a>
+               </li>
+
+               {/* github */}
+
+               <li className="social__item">
+                  <a href="https://github.com/vmosenkov"
+                     rel="noreferrer"
+                     target="_blank"
+                     aria-label="Link to github">
+                     <BsGithub className="social__icons" />
+                  </a>
+               </li>
+
+               {/* linkedin */}
+
+               <li className="social__item">
+                  <a href="https://www.linkedin.com/in/vmosenkov/"
+                     rel="noreferrer"
+                     target="_blank"
+                     aria-label="Link to linkedin">
+                     <BsLinkedin className="social__icons" />
+                  </a>
+               </li>
+
+               {/* artstation */}
+
+               <li className="social__item">
+                  <a href="https://www.artstation.com/vmosenkov"
+                     rel="noreferrer"
+                     target="_blank"
+                     aria-label="Link to artstation">
+                     <FaArtstation className="social__icons" />
+                  </a>
+               </li>
             </ul>
+
+            {/* copyright */}
+
             <div className="copyright">
                <p>©2022 Vladislav Mosenkov</p>
             </div>
-            
          </div>
-         
       </div>
    </footer>
   )
