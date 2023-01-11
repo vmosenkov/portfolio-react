@@ -20,13 +20,13 @@ const Footer = () => {
       <div className="container">
          <div className="footer__wrapper">
             <ul className="social">
-               <li className="social__item"><a href="https://vk.com/vmosenkov" rel="noreferrer" target="_blank"><img src={vk} alt="Link"/></a></li>
-               <li className="social__item"><a href="https://www.instagram.com/v.mosenkov/" rel="noreferrer" target="_blank"><BsInstagram className="social__icons" /></a></li>
-               <li className="social__item"><a href="https://t.me/vmosenkov" rel="noreferrer" target="_blank"><BsTelegram className="social__icons" /></a></li>
+               <li title="link vk" className="social__item"><a href="https://vk.com/vmosenkov" rel="noreferrer" target="_blank"><img src={vk} alt="Link"/></a></li>
+               <li title="link instagram" className="social__item"><a href="https://www.instagram.com/v.mosenkov/" rel="noreferrer" target="_blank"><BsInstagram className="social__icons" /></a></li>
+               <li title="link tg" className="social__item"><a href="https://t.me/vmosenkov" rel="noreferrer" target="_blank"><BsTelegram className="social__icons" /></a></li>
                {/* <li className="social__item"><a href="#!" rel="noreferrer" target="_blank"><BsTwitter className="social__icons" /></a></li> */}
-               <li className="social__item"><a href="https://github.com/vmosenkov" rel="noreferrer" target="_blank"><BsGithub className="social__icons" /></a></li>
-               <li className="social__item"><a href="https://www.linkedin.com/in/vmosenkov/" rel="noreferrer" target="_blank"><BsLinkedin className="social__icons" /></a></li>
-               <li className="social__item"><a href="https://www.artstation.com/vmosenkov" rel="noreferrer" target="_blank"><FaArtstation className="social__icons" /></a></li>
+               <li title="link github" className="social__item"><a href="https://github.com/vmosenkov" rel="noreferrer" target="_blank"><BsGithub className="social__icons" /></a></li>
+               <li title="link in" className="social__item"><a href="https://www.linkedin.com/in/vmosenkov/" rel="noreferrer" target="_blank"><BsLinkedin className="social__icons" /></a></li>
+               <li title="link art" className="social__item"><a href="https://www.artstation.com/vmosenkov" rel="noreferrer" target="_blank"><FaArtstation className="social__icons" /></a></li>
             </ul>
             <div className="copyright">
                <p>©2022 Vladislav Mosenkov</p>
