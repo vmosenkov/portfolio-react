@@ -30,7 +30,7 @@ function App() {
             <ScrollToTop />
             <Navbar />
             <Routes>
-               <Route path="/portfolio-react/" element={<HomePage />} />
+               <Route path="/portfolio-react" element={<HomePage />} />
                <Route path="/portfolio-react/about-me" element={<AboutMe />} />
                <Route path="/portfolio-react/projects" element={<ProjectsPage />} />
                <Route path="/portfolio-react/project/:id" element={<ProjectPage />} />
