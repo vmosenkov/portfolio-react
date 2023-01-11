@@ -16,7 +16,6 @@ const Project = ({title, img, id, category}) => {
             <img 
                src={img}
                alt={title}
-               type="image/svg+xml"
                className="project__img"
             />
             </div>
