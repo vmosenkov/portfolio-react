@@ -3,7 +3,8 @@ import React from 'react'
 // styles
 import './styles/main.css';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+/* import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; */
+import { Routes, Route, useLocation } from "react-router-dom";
 
 // components
 import Navbar from './components/Navbar/Navbar';
@@ -22,21 +23,22 @@ import NotFoundPage from './pages/NotFoundPage';
 import ScrollToTop from './utils/scrollToTop.js'
 
 function App() {
+   const location = useLocation();
    return (
       <div className="App">
-         <Router basename='/'>
+         {/* <Router basename='/'> */}
             <ScrollToTop />
             <Navbar />
-            <Routes>
-               <Route path="/portfolio-react/" element={<HomePage />} />
-               <Route path="/portfolio-react/about-me" element={<AboutMe />} />
+            <Routes location={location} key={location.pathname}>
+               <Route path="/" element={<HomePage />} />
+               <Route path="/about-me" element={<AboutMe />} />
                <Route path="/portfolio-react/projects" element={<ProjectsPage />} />
                <Route path="/portfolio-react/project/:id" element={<ProjectPage />} />
                <Route path="/portfolio-react/contacts" element={<ContactsPage />} />
                <Route path="/portfolio-react/skills" element={<MySkillsPage />} />
                <Route path="*" element={<NotFoundPage />} />
             </Routes>
-         </Router>
+         {/* </Router> */}
          <Footer />
       </div>
    );
