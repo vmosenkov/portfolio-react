@@ -26,19 +26,17 @@ function App() {
    const location = useLocation();
    return (
       <div className="App">
-         {/* <Router basename='/'> */}
-            <ScrollToTop />
-            <Navbar />
-            <Routes location={location} key={location.pathname}>
-               <Route path="/" element={<HomePage />} />
-               <Route path="/about-me" element={<AboutMe />} />
-               <Route path="/portfolio-react/projects" element={<ProjectsPage />} />
-               <Route path="/portfolio-react/project/:id" element={<ProjectPage />} />
-               <Route path="/portfolio-react/contacts" element={<ContactsPage />} />
-               <Route path="/portfolio-react/skills" element={<MySkillsPage />} />
-               <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-         {/* </Router> */}
+         <ScrollToTop />
+         <Navbar />
+         <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about-me" element={<AboutMe />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/project/:id" element={<ProjectPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/skills" element={<MySkillsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+         </Routes>
          <Footer />
       </div>
    );
