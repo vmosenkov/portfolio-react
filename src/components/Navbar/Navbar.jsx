@@ -1,7 +1,9 @@
 import React from 'react';
 
 // dependencies
-import { NavLink } from 'react-router-dom';
+/* import { NavLink } from 'react-router-dom'; */
+
+import { NavLink, useNavigate } from "react-router-dom";
 
 // styles
 import "./Navbar.css";
@@ -12,14 +14,14 @@ import LabelLogo from '../UI/LabelLogo/LabelLogo';
 
 const Navbar = () => {
 
-const activeLink = 'nav-list__link nav-list__link--active';
-const notActiveLink = 'nav-list__link';
+    const activeLink = 'nav-list__link nav-list__link--active';
+    const notActiveLink = 'nav-list__link';
 
   return (
     <nav className="nav">
         <div className="container">
             <div className="nav_row">
-                <NavLink className="logo" to="/portfolio-react/" >
+                <NavLink className="logo" to="/" >
                     <LabelLogo />
                     <strong></strong>
                     portfolio
@@ -27,10 +29,10 @@ const notActiveLink = 'nav-list__link';
                 <SwitchTheme/>
                 <ul className='nav-list'>
                     <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/" >Home</NavLink>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/" >Home</NavLink>
                     </li>
                     <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/about-me" >About Me</NavLink>
+                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/about-me" >About Me</NavLink>
                     </li>
                     <li className='nav-list__item'>
                         <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/portfolio-react/skills" >Skills</NavLink>
