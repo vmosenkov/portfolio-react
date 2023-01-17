@@ -1,0 +1,33 @@
+
+.skillCard {
+	font-size: 0.9em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background-color: var(--SkillCard-bg);
+	box-shadow: var(--box-shadow);
+	border-radius: 5px;
+	padding: 5px;
+	
+	&__icon {
+		display: flex;
+		align-items: center;
+		min-height: 28px;
+		min-width: 28px;
+		height: 48px;
+		width: 48px;
+	}
+	
+	&__name {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+		margin-top: 10px;
+	}
+}
+
+
