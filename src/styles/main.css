@@ -8,7 +8,8 @@
 	--black-border: #26292d;
 	--white: #fff;
 	--purple: #5c62ec;
-	--golden: #ffd700;
+	--golden: #ffd900;
+	--purple__dark: #c3c;
 
 	/* Nav */
 	--nav-bg: var(--black);
@@ -38,6 +39,8 @@ body[data-theme='dark'] {
 	--text-color: var(--white);
 
 	--theme-color: var(--golden);
+	--theme-color__border: var(--purple);
+	--theme-box-shadow__primary: 0px 5px 35px rgba(255, 255, 255, 0.35);
 
 	--SkillCard-bg: var(--black);
 	--SkillCard-text: var(--white);
@@ -45,8 +48,6 @@ body[data-theme='dark'] {
 
 	--modal-border: 2px solid var(--golden);
 	--modal-text: var(--golden);
-	--modal__send-btn__border: 2px solid var(--purple);
-	--modal__send-btn__color: var(--golden);
 }
 
 body[data-theme='light'] {
@@ -54,12 +55,12 @@ body[data-theme='light'] {
 	--header-background-image: var(--header-bg-img-light);
 	--page-bg: #ffffff;
 	--theme-color: var(--purple);
+	--theme-color__border: var(--golden);
 
 	--SkillCard-bg: var(--white);
 	--SkillCard-text: var(--black);
 
-	--modal__send-btn__border: 2px solid var(--golden);
-	--modal__send-btn__color: var(--purple);
+	--theme-color__border: var(--golden);
 }
 
 html,
@@ -115,6 +116,10 @@ body {
    flex-direction: row;
 }
 
+.theme__color {
+	color: var(--theme-color);
+}
+
 .main-card {
 	background-color: var(--SkillCard-bg);
 	box-shadow: var(--box-shadow);
@@ -142,10 +147,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	column-gap: 10px;
-}
-
-.theme__color {
-	color: var(--theme-color);
 }
 
 /* Content list */
