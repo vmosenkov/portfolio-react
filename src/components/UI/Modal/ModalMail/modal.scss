@@ -74,10 +74,10 @@
     column-gap: 10px;
     cursor: pointer;
     font-weight: 600;
-    background-color: var(--modal__send-btn__color);
+    background-color: var(--theme-color);
 
     &:hover {
-        border: var(--modal__send-btn__border);
+        border: 2px solid var(--theme-color__border);
     }
 }
 
