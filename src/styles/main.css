@@ -21,7 +21,6 @@
 	/* Light mode */
 	--page-bg: var(--white);
 	--text-color: var(--black);
-	--title-1: var(--purple);
 
 	--SkillCard-bg: var(--white);
 	--Skillcard-text: var(--black);
@@ -38,7 +37,7 @@ body[data-theme='dark'] {
 	--page-bg: #252526;
 	--text-color: var(--white);
 
-	--title-1: var(--white);
+	--theme-color: var(--golden);
 
 	--SkillCard-bg: var(--black);
 	--SkillCard-text: var(--white);
@@ -54,6 +53,7 @@ body[data-theme='light'] {
 	--header-bg: #ffffff;
 	--header-background-image: var(--header-bg-img-light);
 	--page-bg: #ffffff;
+	--theme-color: var(--purple);
 
 	--SkillCard-bg: var(--white);
 	--SkillCard-text: var(--black);
@@ -129,7 +129,7 @@ body {
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 1.3;
-	color: var(--title-1);
+	color: var(--theme-color);
 	text-align: center;
 }
 
@@ -142,6 +142,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	column-gap: 10px;
+}
+
+.theme__color {
+	color: var(--theme-color);
 }
 
 /* Content list */
@@ -209,7 +213,7 @@ body {
 		padding: 40px 0;
 	}
 
-	.title-1 {
+	.title-1 theme__color {
 		margin-bottom: 30px;
 		font-size: 40px;
 	}
