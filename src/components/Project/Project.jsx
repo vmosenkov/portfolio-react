@@ -5,11 +5,11 @@ import { NavLink} from 'react-router-dom'
 import Tilt from 'react-tilt'
 
 // styles
-import './Project.css'
+import './project.scss'
 
 const Project = ({title, img, id, category}) => {
   return (
-   <NavLink to={`/portfolio-react/project/${id}`}>
+   <NavLink to={`/project/${id}`}>
       <Tilt className="Tilt" options={{ max : 25, scale: 1.1, perspective: 1000, speed: 1000, transition: true,}}>
          <li className="project">
          <div className="Tilt-inner">
@@ -21,7 +21,6 @@ const Project = ({title, img, id, category}) => {
             </div>
             <div className="Tilt-inner"><h3 className="project__title">{title}</h3></div>
             <div className="Tilt-inner"><p className="project__desc">Project: {category}</p></div>
-            
          </li>
       </Tilt>
    </NavLink>
