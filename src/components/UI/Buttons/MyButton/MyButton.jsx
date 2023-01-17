@@ -1,10 +1,10 @@
 import React from 'react';
-import cl from './myButton.module.scss';
+import cl from'./myButton.module.scss';
 
-const MyButton = ( {children, link, ...props} ) => {
+const MyButton = ( {children, link, className, ...props} ) => {
 	
 	return (
-    	<button {...props} className={cl.btn__outline}>
+    	<button {...props} className={ `${cl.btn__main} ${className}` }>
 			{children}
 		</button>
   	)
