@@ -23,7 +23,9 @@ import NotFoundPage from './pages/NotFoundPage';
 import ScrollToTop from './utils/scrollToTop.js'
 
 function App() {
+
    const location = useLocation();
+
    return (
       <div className="App">
          <ScrollToTop />
