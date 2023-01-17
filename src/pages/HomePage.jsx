@@ -4,7 +4,7 @@ import React from 'react'
 import Header from '../components/Header/Header';
 
 // Styles
-import "./AllPage.css"
+import "./allPage.scss"
 
 const HomePage = () => {
   return (
