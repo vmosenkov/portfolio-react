@@ -12,7 +12,7 @@ import { useLocalStorage } from '../../../hooks/useLocalStorage';
 import detectSystemTheme from './../../../utils/detectSystemTheme';
 
 // styles
-import './SwitchTheme.css'
+import './switchTheme.scss'
 
 
 const Theme = () => {
@@ -37,7 +37,7 @@ const Theme = () => {
    },[setTheme]);
 
    const btnNotActive = "dark-mode-btn";
-   const btnActive = "dark-mode-btn dark-mode-btn--active";
+   const btnActive = "dark-mode-btn dark-mode-btn__active";
    
    return (
       <>
