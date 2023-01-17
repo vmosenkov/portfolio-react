@@ -10,8 +10,8 @@ const StyledComponentSkillCard = () => {
    <li>
       <Tilt className="Tilt" options={{ max : 45, scale: 1.2, perspective: 1000, speed: 1000, transition: true,}}>
         <div className="skillCard">
-         <img className="skillCard-icon" src={logoStyledComponents} alt="logo react" type="image/svg+xml"/>
-         <div className="skillCard-name">Styled component</div>
+         <img className="skillCard__icon" src={logoStyledComponents} alt="logo react" type="image/svg+xml"/>
+         <div className="skillCard__name">Styled component</div>
         </div>
       </Tilt>
    </li>
