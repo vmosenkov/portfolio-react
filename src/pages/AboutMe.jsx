@@ -17,7 +17,7 @@ function AboutMe() {
                      <img src={myPhoto} alt="" />
                   </div>
                   <div className="about-content__text">
-                     <h2 className="title-2">About Me</h2>
+                     <h2 className="title-2 theme__color">About Me</h2>
                      <p>I'm Vladislav Mosenkov, a 27-year-old Front-end developer.</p>
                      <p>I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences and web applications.</p>
                      <p>At one of the last places of work, I created a database with/Knowledge base/Corporate website on CMS Wordpress for employees because it was painful to watch how they work in cloud storage.</p>
