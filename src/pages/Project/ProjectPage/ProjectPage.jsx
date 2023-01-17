@@ -7,11 +7,12 @@ import { useParams } from 'react-router-dom';
 import { projects } from '../../../helpers/projectsList.js';
 
 // styles
-import "./ProjectPage.css"
+import "./projectPage.scss"
 
 // components
-import ABtnGitHub from '../../../components/UI/Buttons/A_Btn_GitHub/ABtnGitHub';
-import ABtnLiveSite from '../../../components/UI/Buttons/A_Btn_LiveSite/ABtnLiveSite.jsx';
+import { BsGithub } from 'react-icons/bs';
+import { CgWebsite } from 'react-icons/cg';
+import MyABtn from '../../../components/UI/Buttons/MyABtn/MyABtn.jsx';
 
 
 const ProjectPage = () => {
@@ -39,36 +40,46 @@ const ProjectPage = () => {
                   <p>Built with:</p>
                </div>
                   
-               <div className="skills-box">
-                  <div className="skills-title">Frontend skills:</div>
-                  <ul className="skills-row">
+               <div className="skills__box">
+                  <div className="skills__title">Frontend skills:</div>
+                  <ul className="skills__row">
                      {project.project[0].skills.skillsFrontend}
                   </ul>
                </div>
 
                {project.project[0].skills.skillsBackend && (
-               <div className="skills-box">
-                  <div className="skills-title">Backend skills:</div>
-                  <ul className="skills-row">
+               <div className="skills__box">
+                  <div className="skills__title">Backend skills:</div>
+                  <ul className="skills__row">
                   {project.project[0].skills.skillsBackend}
                   </ul>
                </div>
                )}
                {project.project[0].skills.skillsDependencies && (
-               <div className="skills-box">
-                  <div className="skills-title">Dependencies:</div>
-                  <ul className="skills-row">
+               <div className="skills__box">
+                  <div className="skills__title">Dependencies:</div>
+                  <ul className="skills__row">
                      {project.project[0].skills.skillsDependencies}
                   </ul>
                </div>
                )}
             </div>
-            <div className="project-works_links">
-               {project.project[0].gitHubLink && (
-                  <ABtnGitHub link={project.project[0].gitHubLink}/>
-               )}
+            <div className="project-works__links">
+               {/* 
                {project.project[0].liveSiteLink && (
                   <ABtnLiveSite link={project.project[0].liveSiteLink}/>
+               )} */}
+               {project.project[0].gitHubLink && (
+                  <MyABtn link={project.project[0].gitHubLink}>
+                     <BsGithub size={24}/>
+                     GitHub repo
+                  </MyABtn>
+               )}
+               {project.project[0].gitHubLink && (
+                  <MyABtn link={project.project[0].liveSiteLink}>
+                     <CgWebsite size={24}/>
+                     GitHub repo
+                  </MyABtn>
                )}
             </div>
          </div>
