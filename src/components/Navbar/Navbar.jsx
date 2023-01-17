@@ -1,12 +1,10 @@
 import React from 'react';
 
 // dependencies
-/* import { NavLink } from 'react-router-dom'; */
-
 import { NavLink, useNavigate } from "react-router-dom";
 
 // styles
-import "./Navbar.css";
+import "./navbar.scss";
 
 // components
 import SwitchTheme from '../UI/SwitchTheme/SwitchTheme';
@@ -16,43 +14,68 @@ const Navbar = () => {
 
     const navigate = useNavigate();
 
-    const activeLink = 'nav-list__link nav-list__link--active';
+    const activeLink = 'nav-list__link nav-list__link__active';
     const notActiveLink = 'nav-list__link';
 
-  return (
-    <nav className="nav">
-        <div className="container">
-            <div className="nav_row">
-                {/* <NavLink className="logo" to="/" >
-                    <LabelLogo />
-                    <strong></strong>
-                    portfolio
-                </NavLink> */}
-                <div className="logo" onClick={() => navigate("/")}>
-                    <LabelLogo />
+    return (
+        <nav className="nav">
+            <div className="container">
+                <div className="nav__row">
+                    <div className="logo" onClick={() => navigate("/")}>
+                        <LabelLogo />
+                    </div>
+                    <SwitchTheme/>
+                    <ul className='nav-list'>
+
+                        {/* Link to Home */}
+                        <li className='nav-list__item'>
+                            <NavLink
+                                className={ ({ isActive }) => isActive ? activeLink : notActiveLink}
+                                to="/"
+                                >Home
+                            </NavLink>
+                        </li>
+
+                        {/* Link to About Me */}
+                        <li className='nav-list__item'>
+                            <NavLink
+                                className={ ({ isActive }) => isActive ? activeLink : notActiveLink}
+                                to="/about-me"
+                                >About Me
+                            </NavLink>
+                        </li>
+
+                        {/* Link to Skills */}
+                        <li className='nav-list__item'>
+                            <NavLink
+                                className={ ({ isActive }) => isActive ? activeLink : notActiveLink}
+                                to="/skills"
+                                >Skills
+                            </NavLink>
+                        </li>
+
+                        {/* Link to Projects */}
+                        <li className='nav-list__item'>
+                            <NavLink
+                                className={ ({ isActive }) => isActive ? activeLink : notActiveLink}
+                                to="/projects"
+                                >Projects
+                            </NavLink>
+                        </li>
+
+                        {/* Link to Contacts */}
+                        <li className='nav-list__item'>
+                            <NavLink
+                                className={ ({ isActive }) => isActive ? activeLink : notActiveLink}
+                                to="/contacts"
+                                >Contacts
+                            </NavLink>
+                        </li>
+                    </ul>
                 </div>
-                <SwitchTheme/>
-                <ul className='nav-list'>
-                    <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/" >Home</NavLink>
-                    </li>
-                    <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/about-me" >About Me</NavLink>
-                    </li>
-                    <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/skills" >Skills</NavLink>
-                    </li>
-                    <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/projects" >Projects</NavLink>
-                    </li>
-                    <li className='nav-list__item'>
-                        <NavLink className={ ({ isActive }) => isActive ? activeLink : notActiveLink} to="/contacts" >Contacts</NavLink>
-                    </li>
-                </ul>
             </div>
-        </div>
-    </nav>
-  )
+        </nav>
+    )
 }
 
 export default Navbar
