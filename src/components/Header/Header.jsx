@@ -4,7 +4,7 @@ import React from 'react';
 import { useSpring, animated } from '@react-spring/web'
 
 // styles
-import "./Header.css"
+import "./header.scss"
 
 
 const Header = () => {
