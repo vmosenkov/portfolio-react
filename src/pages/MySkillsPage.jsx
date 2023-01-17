@@ -25,7 +25,7 @@ const MySkillsPage = () => {
 
    return (
       <main className="section">
-         <h2 className="title-1">Skills</h2>
+         <h2 className="title-1 theme__color">Skills</h2>
       <div className="container">
          {/* Technical Skills */}
          <section className="wrapper">
