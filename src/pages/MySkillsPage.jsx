@@ -19,6 +19,7 @@ import PHPMASkillCard         from '../components/UI/SkillsCard/OtherPrograms/PH
 
 // Styles
 import "./allPage.scss"
+import VSCodeSkillCard from '../components/UI/SkillsCard/OtherPrograms/VSCodeSkillCard/VSCodeSkillCard';
 
 const MySkillsPage = () => {
 
@@ -38,7 +39,7 @@ const MySkillsPage = () => {
             <div className="main-card">
                <div className="skills__text">
                   <h2 className="title-2">Tools</h2>
-               <p>Использую Windows 10 и Ubuntu в качестве рабочей ОС. Есть опыт использования Figma, Avocode и Zeplin для работы с дизайн-макетами. Использую редактор Visual Studio Code с плагинами Prettier и ESLint для автоматического форматирования и проверки кода.</p>
+               <p>I use Windows 10 and Ubuntu as a working OS. I have experience using Figma and Avocode to work with design layouts. I use the Visual Studio Code editor with Prettier and ESLint plugins for automatic formatting and code validation.</p>
                </div>
             </div>
          </section>
@@ -88,7 +89,7 @@ const MySkillsPage = () => {
                <div className="skills__text">
                <h2 className="title-2">Programs/Web Application</h2>
                   <ul className="skills__row">
-                     <div>VS code</div>
+                     <VSCodeSkillCard />
                      <div>Wordpress</div>
                      <GitSkillCard />
                      <PHPMASkillCard />
