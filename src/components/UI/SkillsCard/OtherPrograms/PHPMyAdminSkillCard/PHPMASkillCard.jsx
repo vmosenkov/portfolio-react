@@ -3,7 +3,7 @@ import React from 'react'
 // dependencies
 import Tilt from 'react-tilt'
 
-import './../../SkillsCard.css'
+import './../../skillsCard.scss'
 
 import logoPHPMA from './logo-phpma.png'
 
@@ -12,8 +12,8 @@ const PHPMASkillCard = () => {
    <li>
       <Tilt className="Tilt" options={{ max : 45, scale: 1.2, perspective: 1000, speed: 1000, transition: true,}}>
          <div className="skillCard">
-            <img className="skillCard-icon" src={logoPHPMA} alt="logo react" type="image/svg+xml"/>
-            <div className="skillCard-name">PhpMyAdmin</div>
+            <img className="skillCard__icon" src={logoPHPMA} alt="logo react" type="image/svg+xml"/>
+            <div className="skillCard__name">PhpMyAdmin</div>
          </div>
       </Tilt>
    </li>
