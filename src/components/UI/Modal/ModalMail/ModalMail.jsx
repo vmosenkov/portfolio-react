@@ -3,6 +3,8 @@ import React, { useState, useRef } from "react";
 import { useSpring, animated } from '@react-spring/web'
 import "./modal.scss";
 import emailjs from "@emailjs/browser";
+import { AiOutlineMail } from "react-icons/ai";
+import MyButton from "../../Buttons/MyButton/MyButton";
 
 const ModalMail = ({ setIsOpen }) => {
    const [values, setValues] = useState({ user_name: "", user_email: "", user_message: "" });
@@ -77,7 +79,9 @@ const ModalMail = ({ setIsOpen }) => {
                />
             </div>
             <div className="modal__button">
-               <button className="send-btn">Send message</button>
+               <button className="send-btn">
+                  <AiOutlineMail size={24} />Send message
+               </button>
             </div>
          </animated.form>
       </div>
