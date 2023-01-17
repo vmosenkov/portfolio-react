@@ -4,7 +4,7 @@ import React from 'react'
 import myPhoto from "./../img/myPhoto.png"
 
 // Styles
-import "./AllPage.css"
+import "./allPage.scss"
 
 function AboutMe() {
   return (
