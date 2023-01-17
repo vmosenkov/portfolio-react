@@ -11,7 +11,7 @@ const ContactsPage = () => {
    return (
       <main className="section">
          <div className="container">
-            <h1 className="title-1">Contacts</h1>
+            <h1 className="title-1 theme__color">Contacts</h1>
 
             <ul className="content-list">
                   {/* <li className="content-list__item">
