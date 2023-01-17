@@ -3,7 +3,7 @@ import React from 'react'
 // dependencies
 import Tilt from 'react-tilt'
 
-import './../../SkillsCard.css'
+import './../../skillsCard.scss'
 
 import logoCanva from './logo-canva.svg'
 
@@ -12,8 +12,8 @@ const CanvaSkillCard = () => {
    <li>
       <Tilt className="Tilt" options={{ max : 45, scale: 1.2, perspective: 1000, speed: 1000, transition: true,}}>
          <div className="skillCard">
-            <img className="skillCard-icon" src={logoCanva} alt="logo react" type="image/svg+xml"/>
-            <div className="skillCard-name">Canva</div>
+            <img className="skillCard__icon" src={logoCanva} alt="logo react" type="image/svg+xml"/>
+            <div className="skillCard__name">Canva</div>
          </div>
       </Tilt>
    </li>
