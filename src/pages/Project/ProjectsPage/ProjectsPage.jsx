@@ -14,7 +14,7 @@ const ProjectsPage = () => {
     <div>
        <main className="section">
         <div className="container">
-            <h2 className="title-1">Web Development Projects</h2>
+            <h2 className="title-1 theme__color">Web Development Projects</h2>
             <ul className="projects">
                 {projects.map((project, id) => {
                     return <Project 
