@@ -3,7 +3,7 @@ import React from 'react'
 // dependencies
 import Tilt from 'react-tilt'
 
-import './../../SkillsCard.css'
+import './../../skillsCard.scss'
 
 import logoSASS from './logo-SASS.svg'
 
@@ -12,8 +12,8 @@ const SassSkillCard = () => {
    <li>
       <Tilt className="Tilt" options={{ max : 45, scale: 1.2, perspective: 1000, speed: 1000, transition: true,}}>
         <div className="skillCard">
-         <img className="skillCard-icon" src={logoSASS} alt="logo SASS" type="image/svg+xml"/>
-         <div className="skillCard-name">SASS</div>
+         <img className="skillCard__icon" src={logoSASS} alt="logo SASS" type="image/svg+xml"/>
+         <div className="skillCard__name">SASS</div>
         </div>
       </Tilt>
    </li>
