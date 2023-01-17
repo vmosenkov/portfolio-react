@@ -4,7 +4,7 @@ import React from 'react';
 import { projects } from '../../../helpers/projectsList.js';
 
 // styles
-import "./ProjectsPage.css"
+import "./projectsPage.scss"
 
 // components
 import Project from '../../../components/Project/Project';
