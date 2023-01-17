@@ -18,17 +18,17 @@ import GitSkillCard           from '../components/UI/SkillsCard/OtherPrograms/Gi
 import PHPMASkillCard         from '../components/UI/SkillsCard/OtherPrograms/PHPMyAdminSkillCard/PHPMASkillCard';
 
 // Styles
-import "./AllPage.css"
+import "./allPage.scss"
 
 const MySkillsPage = () => {
 
    return (
       <main className="section">
+         <h2 className="title-1">Skills</h2>
       <div className="container">
          {/* Technical Skills */}
-         <section className="empty-block"></section>
          <section className="wrapper">
-            <div className="skills-text">
+            <div className="skills__text">
                <h2 className="title-2">Technical Skills</h2>
             </div>
          </section>
@@ -36,7 +36,7 @@ const MySkillsPage = () => {
          <section className="empty-block"></section>
          <section className="wrapper">
             <div className="main-card">
-               <div className="skills-text">
+               <div className="skills__text">
                   <h2 className="title-2">Tools</h2>
                <p>Использую Windows 10 и Ubuntu в качестве рабочей ОС. Есть опыт использования Figma, Avocode и Zeplin для работы с дизайн-макетами. Использую редактор Visual Studio Code с плагинами Prettier и ESLint для автоматического форматирования и проверки кода.</p>
                </div>
@@ -46,36 +46,36 @@ const MySkillsPage = () => {
          <section className="empty-block"></section>
          <section className="wrapper">
             <div className="main-card">
-               <div className="skills-text">
+               <div className="skills__text">
                   <h2 className="title-2">Frontend skills</h2>
-                  <h2 className="skills-subtitle">Languages</h2>
-                  <ul className="skills-row">
+                  <h2 className="skills__subtitle">Languages</h2>
+                  <ul className="skills__row">
                      <HTMLSkillCard/>
                      <CSSSkillCard />
                      <SassSkillCard />
                      <JavaScriptSkillCard />
                      <TypeScriptSkillCard />
                   </ul>
-                  <h2 className="skills-subtitle">Frameworks</h2>
-                  <ul className="skills-row">
+                  <h2 className="skills__subtitle">Frameworks</h2>
+                  <ul className="skills__row">
                      <BootstrapSkillCard />
                      <TailwindCSSSkillCard />
                   </ul>
-                  <h2 className="skills-subtitle">Libraries</h2>
-                  <ul className="skills-row">
+                  <h2 className="skills__subtitle">Libraries</h2>
+                  <ul className="skills__row">
                      <ReactSkillCard />
                      <div>Redux</div>
                   </ul>
-                  <h2 className="skills-subtitle">Other</h2>
-                  <ul className="skills-row">
+                  <h2 className="skills__subtitle">Other</h2>
+                  <ul className="skills__row">
                      <div>Gulp</div>
                      <div>Webpack</div>
                   </ul>
                </div>{/* 
                <div className="divider">
-                  <div className="divider-line"></div>
+                  <div className="divider__ine""></div>
                </div>
-               <div className="skills-text">
+               <div className="skills__text">
                   <h2 className="title-2">Backend skills</h2>
                   <div>soon</div>
                </div> */}
@@ -85,9 +85,9 @@ const MySkillsPage = () => {
          <section className="empty-block"></section>
          <section className="wrapper">
             <div className="main-card">
-               <div className="skills-text">
+               <div className="skills__text">
                <h2 className="title-2">Programs/Web Application</h2>
-                  <ul className="skills-row">
+                  <ul className="skills__row">
                      <div>VS code</div>
                      <div>Wordpress</div>
                      <GitSkillCard />
@@ -100,9 +100,9 @@ const MySkillsPage = () => {
          <section className="empty-block"></section>
          <section className="wrapper">
             <div className="main-card">
-               <div className="skills-text">
+               <div className="skills__text">
                   <h2 className="title-2">Graphic redactors</h2>
-                  <ul className="skills-row">
+                  <ul className="skills__row">
                      <FigmaSkillCard />
                      <CanvaSkillCard />
                      <PhotoshopSkillCard />
@@ -115,9 +115,9 @@ const MySkillsPage = () => {
          <section className="empty-block"></section>
          <section className="wrapper">
             <div className="main-card">
-               <div className="skills-text">
+               <div className="skills__text">
                   <h2 className="title-2">3D</h2>
-                  <ul className="skills-row">
+                  <ul className="skills__row">
                      <BlenderSkillCard />
                   </ul>
                </div>
