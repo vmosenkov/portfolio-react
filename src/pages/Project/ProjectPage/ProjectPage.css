@@ -71,7 +71,7 @@
 	margin-bottom: 10px;
 }
 
-.skills-row {
+.skills__row {
 	display: flex;
 	justify-content: space-around;
 	row-gap: 30px;
@@ -81,7 +81,7 @@
 	align-items: center;
 }
 
-.skills-title {
+.skills__title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -92,7 +92,7 @@
 	line-height: 1.3;
 }
 
-.project-works_links {
+.project-works__links {
 	margin-top: 50px;
 	font-size: 0.9em;
 	display: flex;
