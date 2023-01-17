@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import { AiOutlineMail } from "react-icons/ai";
 import MyButton from '../components/UI/Buttons/MyButton/MyButton';
 import ModalMail from '../components/UI/Modal/ModalMail/ModalMail';
+import cl from'../components/UI/Buttons/MyButton/myButton.module.scss';
 
 const ContactsPage = () => {
 
@@ -32,7 +33,7 @@ const ContactsPage = () => {
                   </li>
                   <li className="content-list__item">
                      <h2 className="title-2">Got something for me?</h2>
-                     <MyButton onClick={() => setIsOpen((isOpen) => !isOpen)}>
+                     <MyButton className={cl.btn__modal_email} onClick={() => setIsOpen((isOpen) => !isOpen)}>
                         <AiOutlineMail size={24} />Send message
                      </MyButton>
                      {isOpen && <ModalMail setIsOpen={setIsOpen}></ModalMail>}
