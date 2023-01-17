@@ -22,7 +22,7 @@ const ProjectPage = () => {
       <main className="section">
          <div className="container">
             <div className="project-details">
-               <h1 className="title-1">{project.project[0].title}</h1>
+               <h1 className="title-1 theme__color">{project.project[0].title}</h1>
 
                <img src={project.project[0].imgBig} alt={project.project[0].title}className="project-details__cover" />
 
