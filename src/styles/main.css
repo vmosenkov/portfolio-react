@@ -8,6 +8,7 @@
 	--black-border: #26292d;
 	--white: #fff;
 	--purple: #5c62ec;
+	--golden: #ffd700;
 
 	/* Nav */
 	--nav-bg: var(--black);
@@ -17,24 +18,23 @@
 	/* Header */
 	--header-text: var(--white);
 
-	/* Footer */
-	--footer-bg: var(--black);
-	--footer-text: var(--white);
-
 	/* Light mode */
 	--page-bg: var(--white);
 	--text-color: var(--black);
-	--accent: var(--purple);
-	--title-1: var(--accent);
+	--title-1: var(--purple);
 
 	--SkillCard-bg: var(--white);
 	--Skillcard-text: var(--black);
 	--box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+
+	/* images */
+	--header-bg-img-dark: url('./../components/Header/img/header-bg-dark.png');
+	--header-bg-img-light: url('./../components/Header/img/header-bg-light.png');
 }
 
 body[data-theme='dark'] {
 	--header-bg: #252526;
-	--header-background-image: url('./../components/Header/img/header-bg-dark.png');
+	--header-background-image: var(--header-bg-img-dark);
 	--page-bg: #252526;
 	--text-color: var(--white);
 
@@ -43,15 +43,23 @@ body[data-theme='dark'] {
 	--SkillCard-bg: var(--black);
 	--SkillCard-text: var(--white);
 	--box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+
+	--modal-border: 2px solid var(--golden);
+	--modal-text: var(--golden);
+	--modal__send-btn__border: 2px solid var(--purple);
+	--modal__send-btn__color: var(--golden);
 }
 
 body[data-theme='light'] {
 	--header-bg: #ffffff;
-	--header-background-image: url('./../components/Header/img/header-bg-light.png');
+	--header-background-image: var(--header-bg-img-light);
 	--page-bg: #ffffff;
 
 	--SkillCard-bg: var(--white);
 	--SkillCard-text: var(--black);
+
+	--modal__send-btn__border: 2px solid var(--golden);
+	--modal__send-btn__color: var(--purple);
 }
 
 html,
@@ -95,7 +103,7 @@ body {
 }
 
 .section {
-	padding: 70px 0;
+	padding: 50px 0;
 }
 
 .flex {
@@ -117,8 +125,7 @@ body {
 }
 
 .title-1 {
-	margin-bottom: 60px;
-
+	margin-bottom: 20px;
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 1.3;
@@ -128,7 +135,6 @@ body {
 
 .title-2 {
 	margin-bottom: 20px;
-
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.3;
@@ -142,12 +148,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 40px;
+	row-gap: 10px;
 	text-align: center;
 }
 
 .content-list a {
-	color: var(--accent);
+	color: var(--purple);
 }
 
 .content-list__item {
