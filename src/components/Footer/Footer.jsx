@@ -1,15 +1,11 @@
 import React from 'react';
 
 // dependencies - icon
-import { BsInstagram } from 'react-icons/bs';
-import { BsTelegram } from 'react-icons/bs';
-/* import { BsTwitter } from 'react-icons/bs'; */
-import { BsGithub } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsInstagram, BsTelegram, /* BsTwitter */ BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaArtstation } from 'react-icons/fa';
 
 // styles
-import "./Footer.css";
+import "./footer.scss";
 
 // icons - social buttons
 import vk from "./icons/vk.svg";
@@ -27,7 +23,7 @@ const Footer = () => {
                      rel="noreferrer"
                      target="_blank"
                      aria-label="Link to vk">
-                     <img src={vk} alt="Link to vk" type="image/svg+xml"/>
+                     <img src={vk} type="image/svg+xml" aria-label="Link to vk"/>
                   </a>
                </li>
 
