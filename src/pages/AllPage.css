@@ -37,7 +37,7 @@
    text-align: center;
 }
 
-.skills-text {
+.skills__text {
    text-align: justify;
    margin-block-start: 20px;
    margin-block-end: 20px;
@@ -52,14 +52,14 @@
 	background-color: var(--SkillCard-bg);
 }
 
-.divider-line {
+.divider__line{
    border: 2px solid;
    height: 80%;
    border-radius: 50px;
 	background-color: var(--SkillCard-bg);
 }
 
-.skills-subtitle {
+.skills__subtitle {
    margin-block-start: 1em;
    margin-block-end: 1em;
 	font-weight: 300;
@@ -81,7 +81,7 @@
       width: 90%;
    }
 
-   .skills-text {
+   .skills__text {
       width: 90%;
    }
 
@@ -90,7 +90,7 @@
       justify-content: center;
    }
    
-   .divider-line {
+   .divider__line{
       width: 80%;
    }
 }
