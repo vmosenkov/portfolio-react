@@ -18,8 +18,8 @@ const Header = () => {
          <h1 className="header__title">
             <strong>
                <img
-                  src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png"
-                  srcset="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png 2x"
+                  src="https://em-content.zobj.net/source/microsoft-teams/364/waving-hand_1f44b.png"
+                  srcset="https://em-content.zobj.net/source/microsoft-teams/364/waving-hand_1f44b.png"
                   alt="Waving Hand on Microsoft Teams 1.0"
                   type="image/svg+xml"
                   width="64"
